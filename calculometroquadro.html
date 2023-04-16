@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade m²</title>
+</head>
+<body>
+    <h1>Calcular a área com o usuário</h1>
+    <p>Largura: <span id = "larguraa"></span> metros</p>
+    <p>Comprimento: <span id = "comprimentoo"></span> metros</p>
+    <p>Resultado da área: <span id = "area"></span> m²</p>
+    <script>
+        function calculoarea(){
+            let largura = Number(prompt("Digite o valor da largura."));
+            let comprimento = Number(prompt("Digite o valor do comprimento."));
+            let resultado = largura * comprimento;
+            document.getElementById("larguraa").innerHTML += "<br/>" + largura;
+            document.getElementById("comprimentoo").innerHTML += "<br/>" + comprimento;
+            document.getElementById("area").innerHTML += "<br/>" + resultado;
+        } calculoarea();
+    </script>
+    
+</body>
+</html>
